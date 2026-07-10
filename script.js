@@ -1,13 +1,5 @@
- // Lucide SVG 아이콘 엔진 가동
         lucide.createIcons();
 
-        /*
-          [전문용어 설명]
-          * Demultiplexer(디멀티플렉서): 하나의 입력 신호를 받아 다수의 출력선 중 하나를 선택해 내보내는 조합 논리 회로입니다.
-          * 이진 데이터: 0 또는 1의 전압 신호 상태에 대응되는 논리적 컴퓨터 정보 수치입니다.
-        */
-
-        // 인터랙티브 디지털 계통도 생성 연산 로직
         function generatePhylogeneticTree() {
             const canvas = document.getElementById('tree-canvas');
             canvas.innerHTML = ""; // 기존 대기 화면 비우기
@@ -54,7 +46,7 @@
                                 <div class="absolute left-1/2 top-[-16px] w-[2px] h-[32px] bg-emerald-800"></div>
                                 <div class="absolute left-1/4 top-0 w-[2px] h-[20px] bg-emerald-800"></div>
                                 <div class="absolute right-1/4 top-0 w-[2px] h-[20px] bg-emerald-800"></div>
-
+ 
                                 <!-- Left Sub: 종자가 없는 식물군 [0] (양치식물군 낙점) -->
                                 <div class="flex flex-col items-center space-y-2">
                                     <div class="bg-slate-800 text-slate-300 border border-slate-700 px-2 py-1.5 rounded-lg text-[10px] text-center">
@@ -140,20 +132,18 @@
             showToast("실시간 계통도 렌더링 완료!");
         }
 
-        // 보고서 텍스트 복사 핸들러 함수
-        // function copyReportText() {
-        //     const reportText = document.getElementById('report-text-area').innerText;
-        //     const textarea = document.createElement('textarea');
-        //     textarea.value = reportText;
-        //     document.body.appendChild(textarea);
-        //     textarea.select();
-        //     document.execCommand('copy');
-        //     document.body.removeChild(textarea);
+        function copyReportText() {
+            const reportText = document.getElementById('report-text-area').innerText;
+            const textarea = document.createElement('textarea');
+            textarea.value = reportText;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
 
-        //     showToast("보고서 내용이 클립보드에 안전하게 복사되었습니다.");
-        // }
-        
-        // 알림 토스트 출력 유틸리티 함수
+            showToast("보고서 내용이 클립보드에 안전하게 복사되었습니다.");
+        }
+
         function showToast(message) {
             const toast = document.getElementById('toast');
             const toastMsg = document.getElementById('toast-message');
