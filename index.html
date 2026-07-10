@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21026 홍윤서의 식물도감🦈</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- 상단 네비게이션 헤더 -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="cpu" class="w-6 h-6 text-emerald-600"></i>
+                <span class="font-bold text-lg tracking-tight">생명과학 계통수 시뮬레이션<span class="text-xs font-normal text-slate-500">  21026 홍윤서</span></span>
+            </div>
+            <nav class="flex space-x-6">
+                <a href="#encyclopedia" class="text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors">식물도감</a>
+                <a href="#tree-generator" class="text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors">계통수 분류기</a>
+                <a href="#report-section" class="text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors">탐구보고서</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 py-8 space-y-12">
+        <section class="bg-gradient-to-br from-emerald-900 to-slate-900 rounded-3xl text-white p-8 md:p-12 shadow-xl relative overflow-hidden">
+            <div class="absolute -right-16 -bottom-16 w-64 h-64 bg-emerald-700/20 rounded-full blur-3xl"></div>
+            <div class="relative z-10 max-w-2xl">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 mb-4">
+                    <i data-lucide="binary" class="w-3.5 h-3.5 mr-1"></i> 
+                </span>
+                <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
+                    식물 계통수 프로그램
+                </h1>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-6">
+                    생물 특징에 따른 계통수
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#tree-generator" class="bg-emerald-500 hover:bg-emerald-400 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-500/20 transition-all flex items-center space-x-2">
+                        <span>계통수 시작</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="encyclopedia" class="space-y-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h2 class="text-2xl font-bold tracking-tight text-slate-900">1. 온라인 식물도감</h2>
+                </div>
+            </div>
+
+            <!-- 식물도감카드부 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- CARD 1: 우산이끼 -->
+                <div class="plant-card bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-44 mb-4 rounded-xl overflow-hidden bg-slate-100 border border-slate-200 flex items-center justify-center">
+                            <img src="images/umbrella_moss.jpg" class="w-full h-full object-cover" alt="우산이끼 이미지" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1545239351-ef35f43d514b?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">선태식물문 (Bryophyte)</span>
+                                <h3 class="text-lg font-bold text-slate-900 mt-2">우산이끼</h3>
+                                <p class="text-xs italic text-slate-400 font-mono mt-0.5">Marchantia polymorpha L.</p>
+                            </div>
+                            <div class="flex flex-col gap-1 text-[10px] font-mono font-bold">
+                                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-400">관다발: 0</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-400">종 자: 0</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-400">씨 방: 0</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mt-3 font-medium">
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">원산지</span> <span>대한민국, 전 세계 온대 지역</span></div>
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">개화시기</span> <span>꽃 피지 않음 (포자 생식)</span></div>
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">서식환경</span> <span>그늘진 다습한 곳</span></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed bg-slate-50 p-2.5 rounded-xl border border-slate-100 mt-4">
+                        가장 원시적인 지상 육상식물군으로, 수분을 수송하는 전도 조직인 관다발 구조가 성립되지 않아 키가 아주 작게 자란다
+                    </p>
+                </div>
+
+                <!-- CARD 2: 고사리 -->
+                <div class="plant-card bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-44 mb-4 rounded-xl overflow-hidden bg-slate-100 border border-slate-200 flex items-center justify-center">
+                            <img src="images/pteridophyte.jpg" class="w-full h-full object-cover" alt="고사리 이미지" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">양치식물문 (Pteridophyte)</span>
+                                <h3 class="text-lg font-bold text-slate-900 mt-2">고사리</h3>
+                                <p class="text-xs italic text-slate-400 font-mono mt-0.5">Pteridium aquilinum (L.) Kuhn</p>
+                            </div>
+                            <div class="flex flex-col gap-1 text-[10px] font-mono font-bold">
+                                <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">관다발: 1</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-400">종 자: 0</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-400">씨 방: 0</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mt-3 font-medium">
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">원산지</span> <span>온대 및 한대지역 전역</span></div>
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">개화시기</span> <span>꽃 피지 않음 (포자 생식)</span></div>
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">서식환경</span> <span>그늘진 곳</span></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed bg-slate-50 p-2.5 rounded-xl border border-slate-100 mt-4">
+                        헛물관을 가진 관다발을 가지며, 번식을 위해 씨앗 대신 잎 뒷면의 포자낭에서 생성되는 포자를 방출
+                    </p>
+                </div>
+
+                <!-- CARD 3: 소나무 -->
+                <div class="plant-card bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-44 mb-4 rounded-xl overflow-hidden bg-slate-100 border border-slate-200 flex items-center justify-center">
+                            <img src="images/gymnosperm.jpg" class="w-full h-full object-cover" alt="소나무 이미지" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">나자식물문 (Gymnosperm)</span>
+                                <h3 class="text-lg font-bold text-slate-900 mt-2">소나무</h3>
+                                <p class="text-xs italic text-slate-400 font-mono mt-0.5">Pinus densiflora Siebold & Zucc.</p>
+                            </div>
+                            <div class="flex flex-col gap-1 text-[10px] font-mono font-bold">
+                                <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">관다발: 1</span>
+                                <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-800">종 자: 1</span>
+                                <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-400">씨 방: 0</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mt-3 font-medium">
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">원산지</span> <span>한국, 일본, 중국 동부</span></div>
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">개화시기</span> <span>5월 (개화)</span></div>
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">서식환경</span> <span>배수가 양호한 척박한 건조지</span></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed bg-slate-50 p-2.5 rounded-xl border border-slate-100 mt-4">
+                        종자식물이며, 씨방이 없는 겉씨식물이다.
+                    </p>
+                </div>
+
+                <!-- CARD 4: 장미 -->
+                <div class="plant-card bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-44 mb-4 rounded-xl overflow-hidden bg-slate-100 border border-slate-200 flex items-center justify-center">
+                            <img src="images/dicot.jpg" class="w-full h-full object-cover" alt="장미 이미지" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">쌍떡잎식물강 (Dicotyledon)</span>
+                                <h3 class="text-lg font-bold text-slate-900 mt-2">장미</h3>
+                                <p class="text-xs italic text-slate-400 font-mono mt-0.5">Rosa hybrida Hort.</p>
+                            </div>
+                            <div class="flex flex-col gap-1 text-[10px] font-mono font-bold">
+                                <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">관다발: 1</span>
+                                <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-800">종 자: 1</span>
+                                <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800">씨 방: 1</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mt-3 font-medium">
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">원산지</span> <span>북반구 한대 및 온대 전역</span></div>
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">개화시기</span> <span>5월 ~ 6월</span></div>
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">서식환경</span> <span>일조량이 우수한 양지의 비옥토</span></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed bg-slate-50 p-2.5 rounded-xl border border-slate-100 mt-4">
+                        씨방 안에 밑씨가 있는 속씨식물이다. 떡잎이 두 개로 나오는 쌍떡잎식물!
+                    </p>
+                </div>
+
+                <!-- CARD 5: 백합 -->
+                <div class="plant-card bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-44 mb-4 rounded-xl overflow-hidden bg-slate-100 border border-slate-200 flex items-center justify-center">
+                            <img src="images/monocot.jpg" class="w-full h-full object-cover" alt="백합 이미지" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=600&q=80';">
+                        </div>
+
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full">외떡잎식물강 (Monocotyledon)</span>
+                                <h3 class="text-lg font-bold text-slate-900 mt-2">백합</h3>
+                                <p class="text-xs italic text-slate-400 font-mono mt-0.5">Lilium candidum L.</p>
+                            </div>
+                            <div class="flex flex-col gap-1 text-[10px] font-mono font-bold">
+                                <span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">관다발: 1</span>
+                                <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-800">종 자: 1</span>
+                                <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800">씨 방: 1</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1.5 text-xs text-slate-600 border-t border-slate-100 pt-3 mt-3 font-medium">
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">원산지</span> <span>북반구의 온대아시아 및 남유럽</span></div>
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">개화시기</span> <span>5월 ~ 7월</span></div>
+                            <div class="flex"><span class="w-20 font-semibold text-slate-400">서식환경</span> <span>배수가 양호한 반그늘 산야 지형</span></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 leading-relaxed bg-slate-50 p-2.5 rounded-xl border border-slate-100 mt-4">
+                        장미와 동일하게 속씨식물이지만, 잎맥이 줄기와 나란하게 평행하게 발달하는 평행맥을 띄고 꽃잎이 대개 3의 배수로 뻗어 나가는 외떡잎식물!
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 계통수 시뮬레이터 영역 -->
+        <section id="tree-generator" class="space-y-6 bg-white p-6 md:p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="border-b border-slate-100 pb-4">
+                <h2 class="text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-2">
+                    <i data-lucide="network" class="text-emerald-600"></i>
+                    2. 계통수 시뮬레이터
+                </h2>
+                <p class="text-sm text-slate-500 mt-1">식물의 세 가지 지표 형질 데이터를 조건식 논리회로 연산을 거쳐 분류 흐름도로 렌더링합니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- 형질 정보 컨트롤러 패널 -->
+                <div class="lg:col-span-4 space-y-4">
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                        <h3 class="font-bold text-slate-800 text-sm mb-3 flex items-center gap-1.5">
+                            <i data-lucide="settings-2" class="w-4 h-4 text-emerald-600"></i>
+                            이진 형질 판독 기준 (Binary Trait Standard)
+                        </h3>
+                        <div class="space-y-3 text-xs text-slate-600">
+                            <div class="flex justify-between items-center bg-white p-2.5 rounded-lg border border-slate-100">
+                                <span class="font-semibold">A. 관다발(Vascular)</span>
+                                <span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-md font-mono">유(1) / 무(0)</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white p-2.5 rounded-lg border border-slate-100">
+                                <span class="font-semibold">B. 종자 형성(Seed)</span>
+                                <span class="bg-blue-100 text-blue-800 px-2 py-0.5 rounded-md font-mono">유(1) / 무(0)</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-white p-2.5 rounded-lg border border-slate-100">
+                                <span class="font-semibold">C. 씨방 발달(Ovary)</span>
+                                <span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded-md font-mono">유(1) / 무(0)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="generatePhylogeneticTree()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl shadow-lg shadow-emerald-600/10 transition-all flex items-center justify-center space-x-2">
+                        <i data-lucide="play" class="w-4 h-4"></i>
+                        <span>분류 알고리즘 가동 및 계통수 생성</span>
+                    </button>
+                    
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 text-xs leading-relaxed text-slate-500">
+                        <span class="font-semibold text-slate-700 block mb-1">전자공학적 매핑 원리:</span>
+                        본 알고리즘은 입력된 식물 특성 벡터 \( \vec{X} = [A, B, C] \)를 마이크로컨트롤러의 조건 논리식 분기 알고리즘을 거쳐 디코딩(Decoding)합니다. 3개의 디지털 스위치를 통과하는 제어 신호 흐름과 원리적으로 같습니다.
+                    </div>
+                </div>
+
+                <!-- 계통수 출력 스크린 -->
+                <div class="lg:col-span-8 bg-slate-900 rounded-xl p-6 min-h-[400px] flex flex-col justify-between text-white relative shadow-inner">
+                    <div class="flex items-center justify-between text-xs text-slate-400 border-b border-slate-800 pb-3">
+                        <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> SYSTEM RUNNING</span>
+                        <span>디지털 계통도 출력 화면</span>
+                    </div>
+
+                    <!-- 알고리즘 가동 시 인터랙티브 트리 레이아웃이 렌더링 영역 -->
+                    <div class="flex-grow flex flex-col justify-center items-center py-6" id="tree-canvas">
+                        <div class="text-center text-slate-500">
+                            <i data-lucide="network" class="w-12 h-12 mx-auto mb-3 opacity-30"></i>
+                            <p class="text-sm">시뮬레이션 버튼을 누르세요</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <!-- 알림 모달 토스트 -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-slate-800 text-white text-xs font-semibold px-4 py-3 rounded-lg shadow-xl translate-y-20 opacity-0 transition-all duration-300 z-50 flex items-center space-x-2">
+        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+        <span id="toast-message">알림 메시지</span>
+    </div>
+
+    <script href="/script.js">
+    </script>
+</body>
+</html>
